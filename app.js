@@ -26,7 +26,7 @@ bot.on("messageCreate", (msg) => {
       break;
     case "evalme":
       var doit = args.slice(1).join(" ");
-      bot.createMessage(msg.channel.id,"do "+eval(doit));
+      bot.createMessage(msg.channel.id,eval(doit));
       break;
   }
 });
