@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
-var bot = new Discord.Client();
-const configs = ('./config.json');
-const responses = require('./responses.json');
+const bot = new Discord.Client();
+const configs = ('./config.json'); //extra configuration
+const responses = require('./responses.json'); //responses for specific commands
+const prefix = ","; //bot's default prefix
 bot.on("ready", () => { 
   console.log('I am ready! :D'); 
 }); 
