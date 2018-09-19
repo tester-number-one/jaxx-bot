@@ -19,4 +19,3 @@ bot.on("message", (message) => {
   }
 });
 bot.login(process.env.BOT_TOKEN);
-//documentation is at https://discord.js.org/#/docs/main/stable/general/welcome
