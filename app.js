@@ -24,7 +24,7 @@ bot.on("message", (message) => {
       switch(op)
       {
         case '+':
-          res = a+b;
+          res = Number(a+b);
           break;
         case '-':
           res = a-b;
