@@ -17,14 +17,14 @@ bot.on("message", (message) => {
       message.channel.send(fruit_response);
       break;
     case "arithmetics":
-      var a = 0 + args[0];
+      var a = parseInt(args[0]);
       var op = args[1];
-      var b = 0 + args[2];
+      var b = parseInt(args[2]);
       var res;
       switch(op)
       {
         case '+':
-          res = Number(a+b);
+          res = a+b;
           break;
         case '-':
           res = a-b;
