@@ -17,9 +17,9 @@ bot.on("message", (message) => {
       message.channel.send(fruit_response);
       break;
     case "arithmetics":
-      var a = args[0];
+      var a = 0 + args[0];
       var op = args[1];
-      var b = args[2];
+      var b = 0 + args[2];
       var res;
       switch(op)
       {
