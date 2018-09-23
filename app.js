@@ -16,6 +16,30 @@ bot.on("message", (message) => {
     case "boop":
       message.channel.send(fruit_response);
       break;
+    case "arithmetics":
+      var a = args[0];
+      var op = args[1];
+      var b = args[2];
+      var res;
+      switch(op)
+      {
+        case '+':
+          res = a+b;
+          break;
+        case '-':
+          res = a-b;
+          break;
+        case '*':
+          res = a*b;
+          break;
+        case '/':
+          res = a/b;
+          break;
+        default:
+          res = "Invalid operand, try again";
+      }
+      message.channel.send(res);
+      break;
   }
 });
 bot.login(process.env.BOT_TOKEN);
