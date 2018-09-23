@@ -8,7 +8,7 @@ bot.on("ready", () => {
 }); 
 bot.on("message", (message) => { 
   const fruit_response = responses.fruit[Math.floor(Math.random() * responses.fruit.length)];
-  const args = msg.content.slice((process.env.PREFIX).length).trim().split(/ +/g);
+  const args = message.content.slice((process.env.PREFIX).length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   if (!(message.author.id === process.env.MASTER_ID)) return; //checks messages only with my id 
   switch(command)
